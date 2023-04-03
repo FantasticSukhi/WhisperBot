@@ -4,57 +4,58 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}.
-Welcome to {}
+нєу {}.
+ωєℓ¢σмє тσ {}
 
-I am the Master of Whisperers messages means you can share hidden message to anyone .
+ι αм тнє мαѕтєя σƒ ωнιѕρєяєяѕ мєѕѕαgєѕ мєαηѕ уσυ ¢αη ѕнαяє нι∂∂єη мєѕѕαgє тσ αηуσηє .
 
-You can use me to send whispers to your friend in groups and channels (even if I'm not there).
-Only that friend and you will be able to read the message even though others are in same group. 
+уσυ ¢αη υѕє мє тσ ѕєη∂ ωнιѕρєяѕ тσ уσυя ƒяιєη∂ ιη gяσυρѕ αη∂ ¢нαηηєℓѕ (єνєη ιƒ ι'м ησт тнєяє).
+σηℓу тнαт ƒяιєη∂ αη∂ уσυ ωιℓℓ вє αвℓє тσ яєα∂ тнє мєѕѕαgє єνєη тнσυgн σтнєяѕ αяє ιη ѕαмє gяσυρ. 
 
-To see how to use me press 'How to Use' below.
+тσ ѕєє нσω тσ υѕє мє ρяєѕѕ 'нσω тσ υѕє' вєℓσω.
 
-By @GORILLA_NETWORKS
+ву @GORILLA_NETWORKS
     """
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")],
+        [InlineKeyboardButton("🔒 ѕєη∂ α ωнιѕρєя 🔒", switch_inline_query="")],
+        [InlineKeyboardButton(text="🏠 яєтυη нσмє 🏠", callback_data="home")],
     ]
     # Rest Buttons
     buttons = [
         [
-            InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")
+            InlineKeyboardButton("🔒 ѕєη∂ α ωнιѕρєя 🔒", switch_inline_query="")
         ],
         [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
+            InlineKeyboardButton("нσω тσ υѕє ❔", callback_data="help"),
+            InlineKeyboardButton("🎪 αвσυт 🎪", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/GORILLA_BOTS")],
-        [InlineKeyboardButton("🎨 Support Group 🎨", url="https://t.me/GORRILA_SUPPORT")],
+        [InlineKeyboardButton("♥ вσт ѕυρρσят ♥", url="https://t.me/GORILLA_BOTS")],
+        [InlineKeyboardButton("🎨 ηєтωσяк 🎨", url="https://t.me/GORILLA_NETWORK")],
     ]
 
     # Help Message
     HELP = """
-Just type the message in below format in any chat.
+    נυѕт туρє тнє мєѕѕαgє ιη вєℓσω ƒσямαт ιη αηу ¢нαт.
+    єχαмρℓє :- @ωg_gвσт нєℓℓσ тнιѕ ιѕ вℓα¢кмαмвα @мαмвα_яєтυяηѕ
 
-`@WG_GBOT your_message friend_username/id`
+`@ωg_gвσт уσυя_мєѕѕαgє ƒяιєη∂_υѕєяηαмє/ι∂`
     """
 
-    # About Message
-    ABOUT = """
-**About This Bot** 
+    # αвσυт мєѕѕαgє
+    αвσυт = """
+**αвσυт тнιѕ вσт**
 
-Bot created by @GORILLA_NETWORK
+вσт ¢яєαтє∂ ву @GORILLA_NETWORK
 
-Source Code : [Click Here](https://github.com/FantasticSukhi/WhisperBot)
+ѕσυя¢є ¢σ∂є : [¢ℓι¢к нєяє](https://github.com/FantasticSukhi/WhisperBot)
 
-Inspired By : nnbbot
+ιηѕριяє∂ ву : nnbbot
 
-Framework : [Pyrogram](docs.pyrogram.org)
+ƒяαмєωσяк : [ρуяσgяαм](docs.pyrogram.org)
 
-Language : [Python](www.python.org)
+ℓαηgυαgє : [ρутнση](www.python.org)
 
-Developer : @MAMBA_RETURNS
+∂єνєℓσρєя : @MAMBA_RETURNS
     
