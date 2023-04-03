@@ -1,7 +1,7 @@
 {
   "name": "Whisper Bot",
   "description": "Telegram bot to send whispers",
-  "logo": "https://telegra.ph/file/33af12f457b16532e1383.jpg",
+  "logo": "https://te.legra.ph/file/d346d2bf9b40b7716b564f.jpg",
   "keywords": [
     "telegram",
     "bot",
@@ -25,7 +25,7 @@
          "plan": "heroku-postgresql"
       }
    ],
-  "repository": "https://github.com/StarkBotsIndustries/WhisperBot",
+  "repository": "https://github.com/FantasticSukhi/WhisperBot",
   "env": {
     "ENVIRONMENT": {
       "description": "Don't change ANYTHING.",
