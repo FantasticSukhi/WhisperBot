@@ -37,7 +37,7 @@ async def _callbacks(bot, callback_query: CallbackQuery):
 		await bot.edit_message_text(
 			chat_id=chat_id,
 			message_id=message_id,
-			text="**Here's How to use me**\n" + Data.HELP,
+			text="**нєяє'ѕ нσω тσ υѕє мє**\n" + Data.HELP,
 			disable_web_page_preview=True,
 			reply_markup=InlineKeyboardMarkup(Data.home_buttons),
 		)
@@ -50,8 +50,8 @@ async def _callbacks(bot, callback_query: CallbackQuery):
 			if q:
 				await callback_query.answer(q.message, show_alert=True)
 			else:
-				await callback_query.answer("Message Not Found", show_alert=True)
+				await callback_query.answer("𝐌𝐞𝐬𝐬𝐚𝐠𝐞 𝐧𝐨𝐭 𝐟𝐨𝐮𝐧𝐝", show_alert=True)
 			SESSION.commit()
 		else:
-			await callback_query.answer("Sorry, you cannot see this whisper as it is not meant for you!", show_alert=True)
+			await callback_query.answer("𝐓𝐞𝐫𝐢 𝐦𝐚𝐚 𝐤𝐚 𝐛𝐡𝐚𝐫𝐨𝐬𝐚. 𝐘𝐞 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐞𝐫𝐞 𝐥𝐢𝐲𝐞 𝐧𝐚𝐡𝐢 𝐡.!", show_alert=True)
 		await check_for_users(data_list)
