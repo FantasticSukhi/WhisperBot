@@ -19,14 +19,14 @@ main = [
     InlineQueryResultArticle(
         title="Whisper Bot",
         input_message_content=InputTextMessageContent("Write Target User's @username or id at the end of your message."),
-        url="https://t.me/StarkBots",
-        description="Write Target User's @username or id at the end of your message.",
-        thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
+        url="https://t.me/GORILLA_BOTS",
+        description="𝔚𝔯𝔦𝔱𝔢 𝔗𝔞𝔯𝔤𝔢𝔱 𝔘𝔰𝔢𝔯'𝔰 @𝔘𝔰𝔢𝔯𝔫𝔞𝔪𝔢 𝔬𝔯 𝔘𝔰𝔢𝔯 𝔦𝔡 𝔞𝔱 𝔱𝔥𝔢 𝔢𝔫𝔡 𝔬𝔣 𝔶𝔬𝔲𝔯 𝔪𝔢𝔰𝔰𝔞𝔤𝔢.",
+        thumb_url="https://te.legra.ph/file/d346d2bf9b40b716b564f.jpg",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Learn More", url="https://t.me/WhisperStarkBot?start=start")],
-                [InlineKeyboardButton("🔒 Send a Whisper 🔒", switch_inline_query="")],
-                [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")]
+                [InlineKeyboardButton("ℓєαяη мσяє", url="https://t.me/WG_GBOT?start=start")],
+                [InlineKeyboardButton("🔒 ѕєη∂ α ωнιѕρєя 🔒", switch_inline_query="")],
+                [InlineKeyboardButton("💥 вσт ѕυρρσят 💥", url="https://t.me/GORILLA_BOTS")]
             ]
         ),
     )
@@ -81,14 +81,14 @@ async def previous_target(sender):
                   title=text1,
                   input_message_content=InputTextMessageContent(
                       f"A whisper message to {mention}" + " " + text2),
-                  url="https://t.me/StarkBots",
+                  url="https://t.me/GORILLA-NETWORK",
                   description=text2,
-                  thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
+                  thumb_url="https://te.legra.ph/file/d346d2bf9b40b716b564f.jpg",
                   reply_markup=InlineKeyboardMarkup(
                       [
                           [
                               InlineKeyboardButton(
-                                  "🔐 Show Message 🔐",
+                                  "🔐 ѕнσω мєѕѕαgє 🔐",
                                   callback_data=str(data_list),
                               )
                           ]
@@ -110,7 +110,7 @@ async def answer(bot: Client, query):
     if query.query == "":
         await query.answer(
             results=main,
-            switch_pm_text="🔒 Learn How to send Whispers",
+            switch_pm_text="🔒 ℓєαяη, нσω тσ ѕєη∂ ωнιѕρєяѕ",
             switch_pm_parameter="start"
         )
     elif len(query_list) == 1:
@@ -118,7 +118,7 @@ async def answer(bot: Client, query):
         results = await previous_target(sender)
         await query.answer(
             results,
-            switch_pm_text="🔒 Learn How to send Whispers",
+            switch_pm_text="🔒 ℓєαяη, нσω тσ ѕєη∂ ωнιѕρєяѕ",
             switch_pm_parameter="start"
         )
     elif len(query_list) >= 2:
@@ -132,7 +132,7 @@ async def answer(bot: Client, query):
             results = await previous_target(sender)
             await query.answer(
                 results,
-                switch_pm_text="🔒 Learn How to send Whispers",
+                switch_pm_text="🔒 ℓєαяη, нσω тσ ѕєη∂ ωнιѕρєяѕ",
                 switch_pm_parameter="start"
             )
             return
@@ -151,15 +151,15 @@ async def answer(bot: Client, query):
                 results=[
                     InlineQueryResultArticle(
                         title=text1,
-                        input_message_content=InputTextMessageContent(f"A whisper message to {target_user.mention}" + " " + text2),
-                        url="https://t.me/StarkBots",
+                        input_message_content=InputTextMessageContent(f"α ωнιѕρєя мєѕѕαgє тσ {target_user.mention}" + " " + text2),
+                        url="https://t.me/GORILLA_NETWORK",
                         description=text2,
-                        thumb_url="https://telegra.ph/file/33af12f457b16532e1383.jpg",
+                        thumb_url="https://te.legra.ph/file/d346d2bf9b40b716b564f.jpg",
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [
                                     InlineKeyboardButton(
-                                        "🔐 Show Message 🔐",
+                                        "🔐 ѕнσω мєѕѕαgє 🔐",
                                         callback_data=str(data_list),
                                     )
                                 ]
@@ -167,7 +167,7 @@ async def answer(bot: Client, query):
                         ),
                     )
                 ],
-                switch_pm_text="🔒 Learn How to send Whispers",
+                switch_pm_text="🔒 𝐋𝐞𝐚𝐫𝐧, 𝐇𝐨𝐰 𝐭𝐨 𝐬𝐞𝐧𝐝 𝐖𝐡𝐢𝐬𝐩𝐞𝐫𝐬",
                 switch_pm_parameter="start"
             )
             await check_for_users(receiver)
@@ -176,7 +176,7 @@ async def answer(bot: Client, query):
             results = await previous_target(sender)
             await query.answer(
                 results,
-                switch_pm_text="🔒 Learn How to send Whispers",
+                switch_pm_text="🔒 𝐋𝐞𝐚𝐫𝐧, 𝐇𝐨𝐰 𝐭𝐨 𝐬𝐞𝐧𝐝 𝐖𝐡𝐢𝐬𝐩𝐞𝐫𝐬",
                 switch_pm_parameter="start"
             )
     await check_for_users(sender)
